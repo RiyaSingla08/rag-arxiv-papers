@@ -1,0 +1,226 @@
+{
+  "raw": {
+    "method": "raw_embedding_retrieval",
+    "hit_rate_at_5": 0.7692307692307693,
+    "hit_rate_at_10": 0.8461538461538461,
+    "mrr": 0.7435897435897435,
+    "per_question": [
+      {
+        "question": "Has RAG been applied to Quranic or Islamic studies?",
+        "expected_arxiv_id": "2503.16581",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "Is there work using RAG to automate literature reviews?",
+        "expected_arxiv_id": "2411.18583",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "How has retrieval augmentation been applied to image generation?",
+        "expected_arxiv_id": "2506.06962",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "What method uses adaptive iterative refinement to make RAG more faithful to sources?",
+        "expected_arxiv_id": "2510.22344",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "Is there research combining retrieval augmentation with code generation that evolves over time?",
+        "expected_arxiv_id": "2402.12237",
+        "rank": null,
+        "reciprocal_rank": 0,
+        "hit_at_5": false,
+        "hit_at_10": false
+      },
+      {
+        "question": "Is there research on wearable devices for fact-checking misinformation?",
+        "expected_arxiv_id": "2504.17204",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "Has RAG been applied to electronic health records?",
+        "expected_arxiv_id": "2605.12335",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "What kind of attack allows inferring whether a specific document was part of a RAG system's knowledge base?",
+        "expected_arxiv_id": "2502.00306",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "Are retrieval models good at retrieving the right tools or APIs for LLM agents to use?",
+        "expected_arxiv_id": "2503.01763",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "Has RAG been applied to answering questions about music?",
+        "expected_arxiv_id": "2507.23334",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "Is there work specifically on making RAG models better at following instructions?",
+        "expected_arxiv_id": "2505.21439",
+        "rank": null,
+        "reciprocal_rank": 0,
+        "hit_at_5": false,
+        "hit_at_10": false
+      },
+      {
+        "question": "What is Ragas and what is it used for?",
+        "expected_arxiv_id": "2309.15217",
+        "rank": 6,
+        "reciprocal_rank": 0.16666666666666666,
+        "hit_at_5": false,
+        "hit_at_10": true
+      },
+      {
+        "question": "Is there work combining retrieval augmentation with multi-modal tokenization?",
+        "expected_arxiv_id": "2311.04589",
+        "rank": 2,
+        "reciprocal_rank": 0.5,
+        "hit_at_5": true,
+        "hit_at_10": true
+      }
+    ]
+  },
+  "reranked": {
+    "method": "cross_encoder_reranked",
+    "hit_rate_at_5": 0.8461538461538461,
+    "hit_rate_at_10": 0.8461538461538461,
+    "mrr": 0.75,
+    "per_question": [
+      {
+        "question": "Has RAG been applied to Quranic or Islamic studies?",
+        "expected_arxiv_id": "2503.16581",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "Is there work using RAG to automate literature reviews?",
+        "expected_arxiv_id": "2411.18583",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "How has retrieval augmentation been applied to image generation?",
+        "expected_arxiv_id": "2506.06962",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "What method uses adaptive iterative refinement to make RAG more faithful to sources?",
+        "expected_arxiv_id": "2510.22344",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "Is there research combining retrieval augmentation with code generation that evolves over time?",
+        "expected_arxiv_id": "2402.12237",
+        "rank": null,
+        "reciprocal_rank": 0,
+        "hit_at_5": false,
+        "hit_at_10": false
+      },
+      {
+        "question": "Is there research on wearable devices for fact-checking misinformation?",
+        "expected_arxiv_id": "2504.17204",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "Has RAG been applied to electronic health records?",
+        "expected_arxiv_id": "2605.12335",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "What kind of attack allows inferring whether a specific document was part of a RAG system's knowledge base?",
+        "expected_arxiv_id": "2502.00306",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "Are retrieval models good at retrieving the right tools or APIs for LLM agents to use?",
+        "expected_arxiv_id": "2503.01763",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "Has RAG been applied to answering questions about music?",
+        "expected_arxiv_id": "2507.23334",
+        "rank": 1,
+        "reciprocal_rank": 1.0,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "Is there work specifically on making RAG models better at following instructions?",
+        "expected_arxiv_id": "2505.21439",
+        "rank": null,
+        "reciprocal_rank": 0,
+        "hit_at_5": false,
+        "hit_at_10": false
+      },
+      {
+        "question": "What is Ragas and what is it used for?",
+        "expected_arxiv_id": "2309.15217",
+        "rank": 4,
+        "reciprocal_rank": 0.25,
+        "hit_at_5": true,
+        "hit_at_10": true
+      },
+      {
+        "question": "Is there work combining retrieval augmentation with multi-modal tokenization?",
+        "expected_arxiv_id": "2311.04589",
+        "rank": 2,
+        "reciprocal_rank": 0.5,
+        "hit_at_5": true,
+        "hit_at_10": true
+      }
+    ]
+  }
+}

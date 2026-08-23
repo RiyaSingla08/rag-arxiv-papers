@@ -1,0 +1,67 @@
+[
+  {
+    "question": "Has RAG been applied to Quranic or Islamic studies?",
+    "expected_arxiv_id": "2503.16581",
+    "notes": "Should retrieve the Quranic Studies RAG paper specifically."
+  },
+  {
+    "question": "Is there work using RAG to automate literature reviews?",
+    "expected_arxiv_id": "2411.18583",
+    "notes": "Automated Literature Review paper."
+  },
+  {
+    "question": "How has retrieval augmentation been applied to image generation?",
+    "expected_arxiv_id": "2506.06962",
+    "notes": "AR-RAG: Autoregressive Retrieval Augmentation for Image Generation."
+  },
+  {
+    "question": "What method uses adaptive iterative refinement to make RAG more faithful to sources?",
+    "expected_arxiv_id": "2510.22344",
+    "notes": "FAIR-RAG paper."
+  },
+  {
+    "question": "Is there research combining retrieval augmentation with code generation that evolves over time?",
+    "expected_arxiv_id": "2402.12237",
+    "notes": "EVOR: Evolving Retrieval for Code Generation."
+  },
+  {
+    "question": "Is there research on wearable devices for fact-checking misinformation?",
+    "expected_arxiv_id": "2504.17204",
+    "notes": "Factually: wearable fact-checking paper."
+  },
+  {
+    "question": "Has RAG been applied to electronic health records?",
+    "expected_arxiv_id": "2605.12335",
+    "notes": "EHR-RAGp paper."
+  },
+  {
+    "question": "What kind of attack allows inferring whether a specific document was part of a RAG system's knowledge base?",
+    "expected_arxiv_id": "2502.00306",
+    "notes": "Riddle Me This! -- membership inference attacks on RAG."
+  },
+  {
+    "question": "Are retrieval models good at retrieving the right tools or APIs for LLM agents to use?",
+    "expected_arxiv_id": "2503.01763",
+    "notes": "Retrieval Models Aren't Tool-Savvy paper."
+  },
+  {
+    "question": "Has RAG been applied to answering questions about music?",
+    "expected_arxiv_id": "2507.23334",
+    "notes": "MUST-RAG: MUSical Text Question Answering."
+  },
+  {
+    "question": "Is there work specifically on making RAG models better at following instructions?",
+    "expected_arxiv_id": "2505.21439",
+    "notes": "Towards Better Instruction Following RAG Models."
+  },
+  {
+    "question": "What is Ragas and what is it used for?",
+    "expected_arxiv_id": "2309.15217",
+    "notes": "Ragas: Automated Evaluation of Retrieval Augmented Generation -- an evaluation framework."
+  },
+  {
+    "question": "Is there work combining retrieval augmentation with multi-modal tokenization?",
+    "expected_arxiv_id": "2311.04589",
+    "notes": "TEAL: Tokenize and Embed ALL for Multi-modal LLMs."
+  }
+]

@@ -14,6 +14,7 @@ import sys
 import ollama
 
 from src.retrieve import retrieve
+from src.rerank import rerank_retrieve
 
 OLLAMA_MODEL = "llama3.2"
 
@@ -42,13 +43,20 @@ def build_prompt(question: str, chunks: list) -> str:
     return RAG_PROMPT_TEMPLATE.format(context=context, question=question)
 
 
-def generate_answer(question: str, top_k: int = 5) -> dict:
+def generate_answer(question: str, top_k: int = 5, use_reranking: bool = False) -> dict:
     """
     Full RAG call: retrieve relevant chunks, build a prompt, generate an answer.
     Returns a dict with the answer text and the sources used, so the caller
     can display citations alongside the generated answer.
+
+    use_reranking=True uses the two-stage retrieve-then-rerank pipeline from
+    Step 7 instead of raw embedding similarity -- generally higher quality,
+    at the cost of a bit more latency.
     """
-    chunks = retrieve(question, top_k=top_k)
+    if use_reranking:
+        chunks = rerank_retrieve(question, initial_k=20, final_k=top_k)
+    else:
+        chunks = retrieve(question, top_k=top_k)
     prompt = build_prompt(question, chunks)
 
     response = ollama.chat(
@@ -70,14 +78,17 @@ def generate_answer(question: str, top_k: int = 5) -> dict:
 
 def main():
     if len(sys.argv) < 2:
-        print('Usage: python src/generate.py "your question here"')
+        print('Usage: python -m src.generate "your question here" [--rerank]')
         sys.exit(1)
 
     question = sys.argv[1]
-    print(f"Question: {question}\n")
+    use_reranking = "--rerank" in sys.argv
+
+    print(f"Question: {question}")
+    print(f"Re-ranking: {'ON' if use_reranking else 'OFF'}\n")
     print("Retrieving relevant chunks and generating answer...\n")
 
-    result = generate_answer(question)
+    result = generate_answer(question, use_reranking=use_reranking)
 
     print("=" * 60)
     print("ANSWER")

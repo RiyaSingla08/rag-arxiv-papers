@@ -1,0 +1,27 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Downloaded papers and vector store (regenerable, can be large)
+data/raw_pdfs/*.pdf
+data/processed/
+chroma_db/
+
+# Environment secrets
+.env
